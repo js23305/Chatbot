@@ -65,10 +65,10 @@
             <div class="col-4">
             </div>
             <div class="col-4">
-                <form onsubmit="return sendMessageToServer()">
+                <form onsubmit="return registerUser()">
                     <div class="mb-3">
-                      <label for="inputGenre" class="form-label">Register</label>
-                      <input type="text" class="form-control" id="inputGenre" aria-describedby="genreHelp">
+                      <label for="inputEmail" class="form-label">Register</label>
+                      <input type="text" class="form-control" id="inputEmail" aria-describedby="registerHelp">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
@@ -90,7 +90,7 @@
         </footer>
     </div>
 
-    <script src="{% static 'js/chatbotui.js' %}"></script>
+    <script src="{% static 'js/register.js' %}"></script>
 
 </body>
 

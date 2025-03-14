@@ -1,17 +1,11 @@
-function testJS() {
-    alert("Hello");
-}
-
-function sendMessageToServer() {
-
-    console.log("Hello")
+function registerUser() {
 
     var formData = new FormData()
-    formData.append('genre', $('#inputGenre').val())
+    formData.append('email', $('#inputEmail').val())
 
     $.ajax(
         {
-            url: "/chatbotui/send_film_to_user/",
+            url: "/register/register_user_with_firebase/",
             type: "POST",
             data: formData,
             processData: false,
