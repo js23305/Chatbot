@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('chatbotui/', include('chatbotui.urls')),
     path('login/', include('login.urls')),
+    path('register/', include('register.urls')),
 ]
