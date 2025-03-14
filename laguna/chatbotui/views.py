@@ -1,5 +1,5 @@
 from django.template import loader
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 
 def chatbotui(request):
@@ -15,8 +15,11 @@ def chatbotui(request):
     
 
 def send_film_to_user(data):
+    print("Hello there")
 
-    print(data)
-
-    return "Horror"
+    return JsonResponse({
+        "message": "Sleepy Hollow",
+        "status_code": 200
+    })
+    
 
