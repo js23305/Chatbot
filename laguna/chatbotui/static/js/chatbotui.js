@@ -7,7 +7,7 @@ function sendMessageToServer() {
     console.log("Hello")
 
     var formData = new FormData()
-    formData.append('genre', $('#inputGenre').val(''))
+    formData.append('genre', $('#inputGenre').val())
 
     $.ajax(
         {
@@ -35,6 +35,8 @@ function sendMessageToServer() {
                     `;
 
                     $('#chatBotResponses').append(listItem);
+
+                    $('#inputGenre').val('')
 
                 }
 
