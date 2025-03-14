@@ -13,3 +13,10 @@ def chatbotui(request):
 
     return HttpResponse(template.render(context, request))
     
+
+def send_film_to_user(data):
+
+    print(data)
+
+    return "Horror"
+

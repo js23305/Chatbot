@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from chatbotui.views import chatbotui, send_film_to_user
 
 urlpatterns = [
-    path('', views.chatbotui, name='chatbotui'),
+    path('', chatbotui, name='chatbotui'),
+    path('send_film_to_user/', send_film_to_user),
 ]
