@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'chatbotui'
+    'chatbotui',
+    'login',
+    'register'
 ]
 
 MIDDLEWARE = [
